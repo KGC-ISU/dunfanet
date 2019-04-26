@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+	<!-- 프런트 컨트롤러 서블릿 등록  -->
+ 	<servlet>
+    	<servlet-name>front</servlet-name>
+   		<servlet-class>controller.FrontController</servlet-class>
+   		<init-param>
+   			<param-name>Path</param-name>
+   			<param-value>/WEB-INF/web.prop</param-value>
+   		</init-param>
+  	</servlet>
+  
+  	<!-- URL패턴 맵핑  -->
+  	<servlet-mapping>
+  	 	<servlet-name>front</servlet-name>
+   	  	<url-pattern>/</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet-mapping> 
+	    <servlet-name>default</servlet-name>
+	    <url-pattern>*.js</url-pattern>
+	    <url-pattern>*.css</url-pattern>
+	    <url-pattern>*.jpg</url-pattern>
+	    <url-pattern>*.gif</url-pattern>
+	    <url-pattern>*.png</url-pattern>
+	    <url-pattern>*.ico</url-pattern>
+	    <url-pattern>*.swf</url-pattern>
+	 </servlet-mapping>
+ 	
+ 	<!-- 인코딩 필터  -->
+ 	<filter>
+    	<filter-name>encoding</filter-name>
+    	<filter-class>filter.encodingFilter</filter-class>
+    	<init-param>
+      		<param-name>enc</param-name>
+      		<param-value>UTF-8</param-value>
+    	</init-param>
+  	</filter>
+  
+  	<!-- 모든 페이지에 인코딩 필터 적용  -->
+  	<filter-mapping>
+   		<filter-name>encoding</filter-name>
+    	<url-pattern>/*</url-pattern>
+  	</filter-mapping>
+  
+</web-app>

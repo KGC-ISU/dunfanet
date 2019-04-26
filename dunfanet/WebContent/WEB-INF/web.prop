@@ -1,0 +1,5 @@
+/=controller.MainController
+main=controller.MainController
+char=controller.CharController
+item=controller.ItemController
+setitem=controller.SetItemController

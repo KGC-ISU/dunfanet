@@ -1,0 +1,329 @@
+/*
+-----------------------
+	아이템 검색 결과
+-----------------------
+*/
+
+.items {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 22%;
+	height: 200px;
+	cursor: pointer;
+	text-align: center;
+	box-shadow:5px 5px 5px rgba(120, 120, 120, 0.5);
+	background-color: #FAFAFA;
+	border-radius:5px;
+	margin: 20px;
+}
+
+.items p {
+	position:absolute;
+	width:100%;
+	bottom:10px;
+	text-align:center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.items span {
+	position:absolute;
+	display: inline-block;
+    padding: 4px 8px;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.items .itemRarity {
+	top:10px;
+	left:20px;
+	color: #fff;
+    background-color: #007bff;
+}
+
+.items .item_level {
+	top:10px;
+	right:20px;
+	color: #fff;
+    background-color: #28a745;
+}
+
+.item_img_box {
+	width:100px;
+	height:100px;
+	background-size:100% 100%;
+}
+
+.itemLevel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+	height: 100%;
+	border-radius:0 0 5px;
+}
+
+.itemLevel p {
+	font-size: 1.35rem;
+	font-weight: bold;
+	color: #000;
+	background-color:rgba(144, 202, 249, 0.8);
+	border-radius:5px;
+	padding:8px 12px;
+}
+
+/*
+-----------------------
+	아이템 검색 결과
+-----------------------
+*/
+
+.item_frame {
+	width: 550px;
+	min-height: 100px;
+	background-color: #fff;
+	border-radius: 8px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0px 2px 6px 0px hsla(0, 0%, 0%, 0.2);
+	border: 1.5px solid rgba(0, 0, 0, 0.2);
+	margin: 50px;
+}
+
+.item_title {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 80px;
+	background-color: rgba(0, 0, 0, 0.07);
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	padding: 25px;
+}
+
+.item_title img {
+	width: 50px;
+	height: 50px;
+	margin-right: 25px;
+}
+
+.item_title p {
+	font-size: 1.05rem;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.7);
+
+}
+
+.item_info {
+	position: relative;
+	width: 100%;
+	min-height: 300px;
+	border-radius: 1px solid #000;
+}
+
+.item_info p {
+	font-size: 0.92rem;
+	font-weight: bold;
+}
+
+.item_damage {
+	border-bottom: 1.2px solid rgba(0, 0, 0, 0.25);
+	line-height: 35px;
+	padding: 10px 20px;
+	min-height: 136px;
+}
+
+.item_Rarity p {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #d39500;
+}
+
+.item_Type p {
+	position: absolute;
+	top: 45px;
+	right: 20px;
+}
+
+.item_TypeDetail p {
+	position: absolute;
+	top: 70px;
+	right: 20px;
+}
+
+.item_level p {
+	position: absolute;
+	top: 95px;
+	right: 20px;
+	color: #23c823;
+}
+
+.item_stat {
+	border-bottom: 1.2px solid rgba(0, 0, 0, 0.25);
+	line-height: 30px;
+	padding: 10px 20px;
+}
+
+.item_char_stat_p {
+	border-bottom: 1.2px solid rgba(0, 0, 0, 0.25);
+	width: 100%;
+	padding: 10px 20px;
+	line-height: 30px;
+}
+
+.explain_detail div {
+	border-bottom: 1.2px solid rgba(0, 0, 0, 0.25);
+	line-height: 25px;
+	color: #36aec9;
+	padding: 10px 20px;
+}
+
+.leveling{
+	padding-top:10px;
+	padding-left:20px;
+}
+
+.skill_job_name {
+	color: #d98000;
+}
+
+.itemFlavorText div {
+	border-bottom: 1.2px solid rgba(0, 0, 0, 0.25);
+	line-height: 25px;
+	color: #36aec9;
+	padding: 10px 20px;
+}
+
+.item_info_bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	padding: 18px;
+}
+
+/*
+---------------------
+	세트 아이템 검색 결과
+---------------------
+*/
+
+.setitemscroll {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: 6%;
+	background-color: #fff;
+	padding: 20px;
+}
+
+.setitemscroll .setitems {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 22%;
+	height: 200px;
+	cursor: pointer;
+	text-align: center;
+	box-shadow: 0px 2px 6px 0px hsla(0, 0%, 0%, 0.2);
+	background-color: #FAFAFA;
+	border-radius: 5px;
+	margin: 15px;
+	font-weight:bold;
+}
+
+.setCenter {
+	display: flex;
+	width: 100%;
+}
+
+.setItemList {
+	display: flex;
+	flex-flow: column;
+	width: 33.33%;
+	height: 200px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #fafafa;
+	box-shadow: 0px 2px 6px 0px hsla(0, 0%, 0%, 0.2); margin : 1%;
+	cursor: pointer;
+	margin: 1%;
+}
+
+.setItemList .itemName {
+	margin-top: 30px;
+	font-weight: bold;
+}
+
+.setItemList .slotName {
+	position: relative;
+	left: -33%;
+	top: -14%;
+	display: inline-block;
+	margin:0 auto;
+	padding: .25em .4em;
+	font-size: 75%;
+	font-weight: 700;
+	line-height: 1;
+	text-align: center;
+	background-color:#fce4ec;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25rem;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out,
+		border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.optiondiv{
+	display:flex;
+	flex-flow:column;
+	justify-content:center;
+	align-items:center;
+	box-shadow: 0px 2px 6px 0px hsla(0, 0%, 0%, 0.2);
+	border-radius:7px;
+	background-color:#fff;
+	width:98%;
+	padding: 20px;
+}
+
+.setOptionBox{
+	display:flex;
+	flex-flow:row;
+}
+
+.optiondiv .setOption{
+	display:flex;
+	flex-flow:column;
+	padding:15px;
+	margin-right:100px;
+	margin-left:100px;
+}
+
+
+.optiondiv .opno{
+	text-align:center;
+	font-size:1.1rem;
+	font-weight:900;
+	line-height: 1.5rem;
+}
+
+.sopExplain, .sopStatus{
+	font-weight:bold;
+	text-align:center;
+	line-height: 27px;
+}
